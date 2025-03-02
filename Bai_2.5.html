@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 2.5</title>
+  </head>
+  <body>
+    <h3 style="background-color: gray">
+      <b>Đăng ký thể thao</b>
+    </h3>
+
+    <hr
+      style="
+        position: relative;
+        bottom: 18px;
+        block-size: 2px;
+        background-color: black;
+      "
+    />
+
+    <p>
+      <b>TRƯỜNG ĐẠI HỌC BẠC LIÊU</b> <br />
+      KHOA KỸ THUẬT VÀ CÔNG NGHỆ
+    </p>
+
+    <p style="text-align: center; position: relative; left: 35%; bottom: 50px">
+      <b>CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM</b> <br />
+      <font style="display: block">Độc lập - Tự do - Hạnh phúc</font>
+    </p>
+
+    <h1
+      style="
+        font-family: Verdana;
+        font-size: 20;
+        color: red;
+        position: relative;
+        bottom: 40px;
+      "
+    >
+      <center><b>PHIẾU ĐĂNG KÝ DỰ THI THỂ THAO</b></center>
+    </h1>
+
+    <img
+      src="logo.png"
+      style="border: 2px outset black; position: relative; bottom: 30px"
+    />
+
+    <form name="dangkythethao">
+      <p style="position: relative; left: 10%">
+        Họ tên:<input type="text" name="TEN" size="40" maxlength="50" /
+        style="position: relative; left: 37px;"> <br />
+        <font style="position: relative; top: 5px"
+          >Mật khẩu:<input
+            type="text"
+            name="MK"
+            size="30"
+            maxlength="8"
+            style="position: relative; left: 20px"
+        /></font>
+      </p>
+      <p>
+        <font><b>Môn thể thao:</b></font> <br />
+        <input type="checkbox" name="bong da" value="1" /> Bóng đá <br />
+        <input type="checkbox" name="bong chuyen" value="2" /> Bóng chuyền
+        <br />
+        <input type="checkbox" name="dien kinh" value="3" /> Điền kinh <br />
+        <input type="checkbox" name="boi loi" value="4" /> Bơi lội
+      </p>
+    </form>
+
+    <hr style="block-size: 3px; background-color: black" />
+    <h2><center>PHẦN CỨNG MÁY TÍNH</center></h2>
+    <hr />
+
+    <form name="phancungmaytinh">
+      <h2><b>Thiết bị:</b></h2>
+      <select name="linh kien" size="4" multiple>
+        <option value="CPU">CPU</option>
+        <option value="MB">Mainboard</option>
+        <option value="DVD">ASUS DVD</option>
+        <option value="RAM">RAM KingMax</option>
+      </select>
+      <h2><b>Thời gian bảo hành:</b></h2>
+      <select name="bao hanh" style="width: 150px"></select>
+      <br />
+      <button type="submit"><u>S</u>ubmit</button>
+      <button type="reset"><u>R</u>eset</button>
+    </form>
+  </body>
+</html>
