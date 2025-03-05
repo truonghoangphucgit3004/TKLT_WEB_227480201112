@@ -1,0 +1,14 @@
+.content {
+  border: 5px outset black;
+  width: 40%;
+  background-color: pink;
+}
+
+.content #header {
+  color: royalblue;
+  text-align: center;
+}
+
+.content #list {
+  font-size: 14px;
+}
