@@ -1,0 +1,21 @@
+#p1 {
+    border: 1px outset black;
+    width: 200px;
+    position: relative;
+    background-color: black;
+    opacity: 0.8;
+    padding: 10px;
+    line-height: 30px;
+}
+
+
+#p2{
+    border: 1px outset black;
+    position: relative;
+    bottom: 248px;
+    left: 222px;
+    width: 410px;
+    height: 210px;
+    background-color: gray;
+    padding: 10px;
+}
