@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2B</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      function thongbao(txt) {
+        document.getElementsByName("txtthongbao")[0].value = txt;
+      }
+    </script>
+    <form>
+      <input
+        type="button"
+        name="Hello"
+        value="Hello"
+        onclick="thongbao('Hello JavaScript!')"
+      />
+      <input type="text" name="txtthongbao" value=" " />
+    </form>
+  </body>
+</html>
