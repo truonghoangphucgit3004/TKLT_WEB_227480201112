@@ -1,0 +1,20 @@
+.tkb {
+  font-family: "Times New Roman";
+  font-size: 14px;
+}
+
+.tkb #thu {
+  background-color: gainsboro;
+}
+
+.tkb #sang {
+  text-align: center;
+}
+
+.tkb #chieu {
+  text-align: center;
+}
+
+.clgr {
+  background-color: gray;
+}
