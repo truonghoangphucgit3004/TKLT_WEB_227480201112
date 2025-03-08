@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10A</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      function nut4() {
+        var hoten;
+        hoten = prompt("Nhập họ tên của bạn: ", "");
+        document.write("Chào bạn" + hoten);
+      }
+      function nut5() {
+        var pic = document.getElementById("ispic");
+        pic.innerHTML = '<img src="10A.jpg" width = 400 height = 550>';
+      }
+    </script>
+    <input
+      type="button"
+      name="B1"
+      value="Nút 1"
+      onclick="alert('Hello World');"
+    />
+    <input
+      type="button"
+      name="B2"
+      value="Nút 2"
+      onclick="alert('Welcome to JavaScript');"
+    />
+    <input
+      type="button"
+      name="B3"
+      value="Nút 3"
+      onclick="var x, y; x = 10; y = 20; alert('Tổng là: ' + (x + y));"
+    />
+    <input type="button" name="B4" value="Nút 4" onclick="nut4();" />
+    <input type="button" name="B5" value="Nút 5" onclick="nut5();" />
+    <div id="ispic"></div>
+  </body>
+</html>

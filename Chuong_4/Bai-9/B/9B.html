@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9B</title>
+  </head>
+  <body>
+    <table id="dstbcomputer" border="1">
+      <tr>
+        <th>Tên thiết bị</th>
+      </tr>
+    </table>
+    <script language="JavaScript">
+      var soluong;
+      var mang = new Array(100);
+      soluong = prompt("Nhập số lượng thiết bị:");
+      for (let index = 0; index < soluong; index++) {
+        mang[index] = prompt("Nhập tên thiết bị:");
+      }
+
+      for (index in mang) {
+        if (mang[index] == "Computer") {
+          var tb = document.getElementById("dstbcomputer");
+          var dong = tb.insertRow();
+          var odl = dong.insertCell();
+          odl.innerHTML = mang[index];
+        }
+      }
+    </script>
+  </body>
+</html>

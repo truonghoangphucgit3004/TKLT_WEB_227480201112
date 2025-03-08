@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7A</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      var D = new Date();
+      var namsinh;
+      do {
+        namsinh = prompt("Nhập năm sinh: ", "");
+      } while (namsinh > D.getFullYear());
+      var tuoi = D.getFullYear() - namsinh;
+      alert("Tuổi của bạn là:" + tuoi);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12C</title>
+  </head>
+  <body>
+    <input type="text" name="Ho" value="Họ" />
+    <input type="text" name="Ten" value="Tên" />
+    <input type="text" name="HoTen" value="" />
+    <input
+      type="button"
+      name="HienThi"
+      value="Hiển thị"
+      onclick="var text = document.getElementsByName('Ho')[0].value + ' và ' +document.getElementsByName('Ten')[0].value;
+      document.getElementsByName('HoTen')[0].value = text;"
+    />
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9A</title>
+  </head>
+  <body>
+    <script language="JavaScript">
+      var soluong;
+      var mang = new Array(100);
+      soluong = prompt("Nhập số lượng người:");
+      for (let index = 0; index < soluong; index++) {
+        mang[index] = prompt("Nhập tên:");
+      }
+      mang.sort();
+      for (index in mang) {
+        document.write(mang[index], "<br>");
+      }
+    </script>
+  </body>
+</html>

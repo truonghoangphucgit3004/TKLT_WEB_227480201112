@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4B</title>
+  </head>
+  <body>
+    <form>
+      <input type="button" name="hoten" value="Họ tên" onclick="cthoten()" />
+      <input type="text" name="txthoten" value="Chào" />
+      <br />
+      <input type="button" name="donvi" value="Đơn vị" onclick="ctdonvi()" />
+      <input type="text" name="txtdonvi" value="Đơn vị" />
+    </form>
+    <script language="JavaScript">
+      function cthoten() {
+        ht = document.getElementsByName("txthoten")[0].value;
+        alert(ht);
+      }
+      function ctdonvi() {
+        dv = document.getElementsByName("txtdonvi")[0].value;
+        alert(dv);
+      }
+    </script>
+  </body>
+</html>
