@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15A</title>
+</head>
+<body>
+    <script laguage="JavaScript">
+       function Capnhat() {
+        document.title = document.getElementsByName("TieuDe")[0].value;
+        document.bgColor = document.getElementsByName("MauNen")[0].value;
+        document.fgColor = document.getElementsByName("MauChu")[0].value;
+        window.defaultStatus = document.getElementsByName("TrangThai")[0].value;
+       }
+    </script>
+    <input type="text" name="MauNen" value="">
+    <input type="text" name="MauChu" value="">
+    <input type="text" name="TieuDe" value="">
+    <input type="text" name="TrangThai" value="">
+    <input type="button" value="Thay đổi" onclick="Capnhat();">
+</body>
+</html>

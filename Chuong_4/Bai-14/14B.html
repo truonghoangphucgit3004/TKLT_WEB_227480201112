@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14B</title>
+</head>
+<body>
+    <script language="JavaScript">
+        function Tinh() {
+            const s = document.getElementsByName("pheptinh");
+            var lc;
+            for(const radio of s) {
+                if(radio.checked) {
+                    lc = radio.value;
+                    break;
+                }
+            }
+            switch (parseInt(lc)) {
+                case 1:
+                    okq.value = parseFloat(osh1.value) - parseFloat(osh2.value);
+                    break;
+                case 2:
+                    okq.value = parseFloat(osh1.value) - parseFloat(osh2.value);
+                    break;
+                case 3:
+                    okq.value = parseFloat(osh1.value) * parseFloat(osh2.value);
+                    break;
+                case 4:
+                    okq.value = parseFloat(osh1.value) / parseFloat(osh2.value);
+                    break;
+            }
+        }
+    </script>
+    <p>Số hạng 1</p> <br>
+    <input type="text" name="sh1" id="osh1">
+    <p>Số hạng 2</p> <br>
+    <input type="text" name="sh2" id="osh2">
+    <p>Kết quả</p> <br>
+    <input type="text" name="kq" id="okq"> <br>
+    <br><input type="radio" name="pheptinh" value="1"> Tổng <br>
+    <input type="radio" name="pheptinh" value="2"> Hiệu <br>
+    <input type="radio" name="pheptinh" value="3"> Tích <br>
+    <input type="radio" name="pheptinh" value="4"> Thương <br>
+    <br><input type="button" value="Tính" onclick="Tinh();">
+</body>
+</html>
