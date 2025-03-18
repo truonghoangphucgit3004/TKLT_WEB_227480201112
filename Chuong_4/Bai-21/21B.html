@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21B</title>
+</head>
+<body>
+    <script language="JavaScript">
+        function Tinh() {
+            const s = document.getElementsByName("pheptinh");
+            var vl;
+            for (const radio of s) {
+                if (radio.checked) {
+                    vl = radio.value;
+                    break;
+                }
+            }
+            switch (parseInt(vl)) {
+                case 1:
+                    ketqua.value = parseFloat(so1.value) + parseFloat(so2.value);
+                    break;
+                case 2:
+                    ketqua.value = parseFloat(so1.value) - parseFloat(so2.value);
+                    break;
+                case 3:
+                    ketqua.value = parseFloat(so1.value) * parseFloat(so2.value);
+                    break;
+                case 4:
+                    ketqua.value = parseFloat(so1.value) / parseFloat(so2.value);
+                    break;
+            }    
+        }
+    </script>
+    Số 1: <input type="text" id="so1">
+    Số 2: <input type="text" id="so2">
+    Kết quả: <input type="text" id="ketqua">
+
+    <input type="radio" name="pheptinh" value="1">Cộng
+    <input type="radio" name="pheptinh" value="2">Trừ
+    <input type="radio" name="pheptinh" value="3">Nhân
+    <input type="radio" name="pheptinh" value="4">Chia
+    
+    <input type="button" value="Tính" onclick="Tinh();">
+</body>
+</html>
