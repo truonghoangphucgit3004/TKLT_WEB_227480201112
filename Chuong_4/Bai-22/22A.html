@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="22A.css" type="text/css" />
+    <title>22A</title>
+  </head>
+  <body>
+    <script laguage="JavaScript">
+      function otinh(giatri) {
+        text1.value += giatri;
+      }
+      function Tinh() {
+        text1.value = eval(text1.value);
+      }
+    </script>
+    <form action="post">
+      <center>
+        <div class="container">
+          <div class="textkq">
+            <input type="text" id="text1" />
+          </div>
+          <div class="phim">
+            <input type="button" value="0" id="b0" onclick="otinh(0);" />
+            <input type="button" value="1" id="b1" onclick="otinh(1);" />
+            <input type="button" value="2" id="b2" onclick="otinh(2);" />
+            <input type="button" value="3" id="b3" onclick="otinh(3);" />
+            <input type="button" value="4" id="b4" onclick="otinh(4);" />
+            <input type="button" value="5" id="b5" onclick="otinh(5);" />
+            <input type="button" value="6" id="b6" onclick="otinh(6);" />
+            <input type="button" value="7" id="b7" onclick="otinh(7);" />
+            <input type="button" value="8" id="b8" onclick="otinh(8);" />
+            <input type="button" value="9" id="b9" onclick="otinh(9);" />
+            <input type="button" value="+" id="b10" onclick="otinh('+');" />
+            <input type="button" value="-" id="b11" onclick="otinh('-');" />
+            <input type="button" value="*" id="b12" onclick="otinh('*');" />
+            <input type="button" value="/" id="b13" onclick="otinh('/');" />
+            <input type="button" value="=" id="b14" onclick="Tinh();" />
+            <input type="reset" value="C" id="b15" />
+          </div>
+        </div>
+      </center>
+    </form>
+  </body>
+</html>
